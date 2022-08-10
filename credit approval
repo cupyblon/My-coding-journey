@@ -1,0 +1,27 @@
+${customrecord.custrecord_ap_ship_date} <strong>CREDIT APPROVAL</strong><br />
+<!--shows customer release ship dates--><br />
+<#if customrecord.custrecordca_customer?has_content> ${customrecord.custrecordca_customer} <strong>Balance</strong> ${customrecord.custrecordca_amount_1} <strong>Days open</strong>: ${customrecord.custrecordca_days_open_1}</#if><br />
+<br />
+<!--if customer field has value then show customer name, oldest invoice days open, and total customer balance--> <#if customrecord.custrecordca_customer_2?has_content>${customrecord.custrecordca_customer_2} <strong>Balance</strong> ${customrecord.custrecordca_amount_2} <strong>Days open</strong>: ${customrecord.custrecorddays_open_2} </#if><br />
+<br />
+<#if customrecord.custrecordca_customer_3?has_content>${customrecord.custrecordca_customer_3} <strong>Balance</strong> ${customrecord.custrecordca_amount_3} <strong>Days open</strong>: ${customrecord.custrecorddays_open_3}<br />
+<br />
+</#if> <#if customrecord.custrecordca_customer_4?has_content>${customrecord.custrecordca_customer_4} <strong>Balance</strong> ${customrecord.custrecordca_amount_4} <strong>Days open</strong>: ${customrecord.custrecorddays_open_4}<br />
+<br />
+</#if> <#if customrecord.custrecordca_customer_5?has_content>${customrecord.custrecordca_customer_5} <strong>Balance</strong> ${customrecord.custrecordca_amount_5} <strong>Days open</strong>: ${customrecord.custrecorddays_open_5}<br />
+<br />
+</#if> <#if customrecord.custrecordca_cusstomer_6?has_content>${customrecord.custrecordca_cusstomer_6} <strong>Balance</strong> ${customrecord.custrecordca_amount_6} <strong>Days open</strong> ${customrecord.custrecorddays_open_6}<br />
+<br />
+</#if> <#if customrecord.custrecordca_customer_7?has_content>${customrecord.custrecordca_customer_7} <strong>Balance</strong> ${customrecord.custrecordca_amount_7} <strong>Days open</strong>: ${customrecord.custrecorddays_open_7}<br />
+<br />
+</#if> <#if customrecord.custrecordca_customer_8?has_content>${customrecord.custrecordca_customer_8} <strong>Balance</strong> ${customrecord.custrecordca_amounbt_8} <strong>Days open</strong>: ${customrecord.custrecorddays_open_8}<br />
+<br />
+</#if> <#if customrecord.custrecordcustomer_9?has_content>${customrecord.custrecordcustomer_9} <strong>Balance</strong> ${customrecord.custrecordap_amount_9} <strong>Days open</strong>: ${customrecord.custrecorddays_open_9}<br />
+<br />
+</#if> <#if customrecord.custrecordap_customer_10?has_content>${customrecord.custrecordap_customer_10} <strong>Balance</strong> ${customrecord.custrecordap_amount_10} <strong>Days open</strong>: ${customrecord.custrecorddays_open_10}<br />
+<br />
+</#if> <#if customrecord.custrecordap_customer_11?has_content>${customrecord.custrecordap_customer_11} <strong>Balance</strong> ${customrecord.custrecordap_amount_11} <strong>Days open</strong>: ${customrecord.custrecorddays_open_11}<br />
+<br />
+</#if> <#if customrecord.custrecordap_customer_12?has_content>${customrecord.custrecordap_customer_12} <strong>Balance</strong> ${customrecord.custrecordap_amount_12} <strong>Days open</strong>: ${customrecord.custrecorddays_open_12}<br />
+<br />
+</#if> <#if customrecord.custrecordca_notes?has_content><strong>${customrecord.custrecordca_notes}</strong> </#if><!-- if notes has a value then show notes vaule in email-->
