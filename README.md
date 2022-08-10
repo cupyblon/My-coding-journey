@@ -1,2 +1,2 @@
 # My-coding-journey
-coding start adurning CS101 class
+coding started durning CS101 class through saylor.org
