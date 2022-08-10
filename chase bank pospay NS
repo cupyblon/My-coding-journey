@@ -1,0 +1,8 @@
+<#-- template building -->
+
+#OUTPUT START#
+<#list payments as payment>
+<#assign entity = entities[payment_index]>
+${setLength(getVoidCheckIndicator(payment),1)},${cbank.custpage_pp_custrecord_2663_acct_num},${getChequeNumber(payment)},${setLength(payment.trandate?string("MM/dd/yyyy"),10)},${formatAmount(getAmount(payment),"dec")},"${buildEntityName(entity,true)}"
+</#list>
+#OUTPUT END#
